@@ -1,0 +1,10 @@
+1. Go to mongo directory y OS shell
+2. As an admin user run "mongo" command
+3. type: "use nautilus" where "nautilus" is the DB's name to which the user will be created
+4. type:
+db.createUser({
+user: "nautilususer",
+pwd: "nautilususer",
+roles: ["readWrite","dbAdmin"]
+});
+
